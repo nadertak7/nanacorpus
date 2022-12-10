@@ -1,62 +1,97 @@
-body { 
-    background: white; 
+/* CSS Stylesheet File */ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif; 
 }
 
-a.navtexttitle {
-        color: rgb(255, 0, 212);
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 0%;
-        font-style:italic;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-left: 10px;
-        padding: 0px;
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+  position: relative;
+  padding: 0px 5%; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 }
 
-a.navtextoptions {
-        color: rgb(255, 0, 212);
-        font-size: 15px;
-        font-weight: bold;
-        line-height: 50%;
-        margin-top: 2px;
-        margin-left: 50px;
-        padding-bottom: 15px;
+nav { width: 100%;
+      position: absolute; 
+      top: 0; 
+      left: 0;
+      padding: 10px 8%; 
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 }
 
-a.dropdowntext {
-    color: rgb(255, 0, 212);
+nav .logo { width: 80px;
+
 }
-a {
-    position: relative;
-    color: rgb(255, 0, 212);
-    text-decoration: none;
-  }
-  
-a:hover {
-    color: rgb(255, 0, 212);
-  }
 
+nav ul li{
+  list-style: none; 
+  display: inline-block;
+  margin-left: 50px; 
+  margin:40px;
+}
 
-a::before {
-    content: "";
-    position: absolute;
-    display: block;
-    border-radius: 3px;
-    width: 75%;
-    height: 3px;
-    bottom: 0;
-    left: 2;
-    background-color: rgb(255, 0, 212);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
+nav ul li a{
+  text-decoration: none;
+  color:#fff;
+  font-size: 17px;
+  font-weight: normal;
 
-a:hover::before {
-    transform: scaleX(1);
-  }
+}
 
-nav { 
-    margin-left: 0px;
-    background-color: yellow
+.content {
+  text-align: center;
+ }
+
+.content h1{
+  font-size:160px;
+  color: #fff;
+  font-weight:normal;
+}
+
+.content h2{
+  font-size:40px;
+  color: #fff;
+  font-weight:normal;
+  margin-left:300px
+}
+
+.content a {
+  text-decoration: none; 
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-right: 300px; 
+}
+
+.background-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .background-video{
+    width: 100%;
+    height: auto;
   }
+}
+
+@media (max-aspect-ratio: 16/9){
+  .background-video{
+    width: 100%;
+    height: auto;
+  }
+}
