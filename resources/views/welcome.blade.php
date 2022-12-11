@@ -8,7 +8,8 @@
 </head>
 
 <body>
-  <div class="hero">
+ 
+  <div class="mainscreen">
 
       <video autoplay loop muted plays-inline class=background-video> 
         <source src="{{ URL('videos/NATURE.mp4') }}" type = "video/mp4">
@@ -18,12 +19,13 @@
       <nav> 
         <a href="/"><img src="{{ URL('images/home3.jpg') }}" alt="logo" class="logo"></a>
         <ul>
-            <li> <a href='#'> Home </a> </li> 
+            <li> <a href='#'> Tools </a> </li> 
             <li> <a href='#'> Nav1 </a> </li> 
             <li> <a href='#'> Nav2 </a> </li> 
             <li> <a href='#'> Nav3 </a> </li> 
         </ul> 
       </nav> 
+      
       <div class="content"> 
         <h1>nanacorpus</h1>
         <h2>web corpus toolkit<h2> 
