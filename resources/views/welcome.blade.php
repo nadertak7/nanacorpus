@@ -11,7 +11,8 @@
   </head>
 
   <body>
-    <div id="app"> 
+    
+    <div id="app" v-cloak > 
 
       <div class="mainscreen">
 
@@ -30,21 +31,41 @@
             </ul> 
           </nav> 
           
-          <div class="content"> 
+          <div v-show="isVisible" class="content"> 
+            
             <h1>nanacorpus</h1>
             <h2>web corpus toolkit<h2> 
             <br> 
             
-            <a href="#">Click here to get started</a>
+            <button v-on:click="toggle">Click here to get started</button>
+          
           </div>  
+
+          <div v-show="!isVisible" class="content1"> 
+            <h1> Please upload your .txt file </h1>
+            <button class="button2">Upload File</button> 
+            <button class="button2"  v-on:click="toggle">Back</button> 
+          </div>
+        
       </div> 
     
-<!--    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/vue@next"></script>
     <script> 
-    let app = Vue.createApp({})
+    let app = Vue.createApp({
+      data: function() {
+        return {
+          isVisible: true 
+        }
+      },
+      methods: {
+        toggle() {
+          this.isVisible = !this.isVisible
+        }
+      }
+    })
     app.mount('#app')
     </script>
--->  
+  
   
   </div> 
     
