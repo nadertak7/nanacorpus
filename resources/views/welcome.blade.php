@@ -16,7 +16,7 @@
 
 
       <nav> 
-        <a href="/"><img src="{{ URL('images/logo.jpg') }}" alt="logo" class="logo"></a>
+        <a href="/"><img src="{{ URL('images/home3.jpg') }}" alt="logo" class="logo"></a>
         <ul>
             <li> <a href='#'> Home </a> </li> 
             <li> <a href='#'> Nav1 </a> </li> 
