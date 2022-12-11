@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
-<title>nanacorpus</title>
-<link rel="stylesheet" href="app.css">
+
+  <title>nanacorpus</title>
+
+  <link rel="stylesheet" href="app.css">
+
 </head>
 
 <body>
@@ -20,9 +23,9 @@
         <a href="/"><img src="{{ URL('images/home3.jpg') }}" alt="logo" class="logo"></a>
         <ul>
             <li> <a href='#'> Tools </a> </li> 
-            <li> <a href='#'> Nav1 </a> </li> 
-            <li> <a href='#'> Nav2 </a> </li> 
-            <li> <a href='#'> Nav3 </a> </li> 
+            <li> <a href='#'> Citation </a> </li> 
+            <li> <a href='#'> Account </a> </li> 
+            <li> <a href='https://github.com/nadertak7' target="_blank"> GitHub </a> </li> 
         </ul> 
       </nav> 
       
@@ -33,9 +36,10 @@
         
         <a href="#">Click here to get started</a>
       </div>   
-  </div> 
-
-
+  
 
 </body>
+
+
+  </div> 
 </html>
