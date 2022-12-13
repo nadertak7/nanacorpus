@@ -7,12 +7,13 @@
     <title>nanacorpus</title>
 
     <link rel="stylesheet" href="app.css">
+    <script src="public/app.js"></script> 
 
   </head>
 
   <body>
     
-    <div id="app" v-cloak > 
+    <div id="app" v-cloak> 
 
       <div class="mainscreen">
 
@@ -31,26 +32,29 @@
             </ul> 
           </nav> 
           
-          <div v-show="isVisible" class="content"> 
+          <div v-show="isVisible" class="content">  
             
             <h1>nanacorpus</h1>
             <h2>web corpus toolkit<h2> 
             <br> 
-            
             <button v-on:click="toggle">Click here to get started</button>
-          
+            
           </div>  
-
+           
           <div v-show="!isVisible" class="content1"> 
+
             <h1> Please upload your .txt file </h1>
             <button class="button2">Upload File</button> 
-            <button class="button2"  v-on:click="toggle">Back</button> 
+            <button class="button2">Submit</button>
+            <button class="button3" v-on:click="toggle">Back</button>  
+          
           </div>
         
       </div> 
     
     <script src="https://unpkg.com/vue@next"></script>
-    <script> 
+    
+  <script> 
     let app = Vue.createApp({
       data: function() {
         return {
@@ -64,12 +68,15 @@
       }
     })
     app.mount('#app')
-    </script>
-  
+  </script>
+
+ 
   
   </div> 
     
   </body>
+
+ 
 
 
 

@@ -38,6 +38,7 @@ nav .logo {
 
 nav .logo:hover {
   transform: scale(1.1);
+  opacity: 0.6;
 }
 
 nav ul li{
@@ -66,21 +67,24 @@ nav ul li a::before{
   left: 0;
   color: rgba(255,255,255,0.5);
   transform: scaleX(0);
-  transition: transform 0.3s ease;
+  transition: transform 1s ease;
 }
 
 nav ul li a:hover::before{
   transform: scaleX(1);
-  background-color: rgba(255, 255, 255, 0.1)
+  background-color: rgba(255, 255, 255, 0.2)
 }
 
 .content {
   text-align: center;
+  /* background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50px;
+  padding: 0px 0px 50px 0px; */
  }
 
 .content h1{
   font-size:160px;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.5);
   font-weight:normal;
 }
 
@@ -108,6 +112,7 @@ nav ul li a:hover::before{
 .content button:hover {
   background-color: rgba(0, 0, 0, 0.6); 
   border: 2px solid rgba(255,255,255,0.6);
+  cursor: pointer;
 }
 
 .content1 {
@@ -118,9 +123,7 @@ nav ul li a:hover::before{
   padding-top: 50px; 
   padding-left: 50px;
   padding-right: 50px;
-
  }
-
 
 .content1 h1{
   font-size:50px;
@@ -148,7 +151,30 @@ nav ul li a:hover::before{
 .content1 .button2:hover {
   background-color: rgba(0, 0, 0, 0.6); 
   border: 2px solid rgba(255,255,255,0.6);
+  cursor: pointer;
 }
+
+.content1 .button3 {
+  text-decoration: none;
+  background-color: rgba(255,255,255, 0);
+  display: block;
+  color: rgba(255,255,255,0.5);
+  font-size: 35px;
+  border: 2px solid rgba(255,255,255);
+  padding: 15px 40px;
+  border-radius: 40px;
+  margin-top: 40px;
+  transition: background 0.2s ease-in-out;
+  margin-left: 455px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content1 .button3:hover {
+  background-color: rgba(0, 0, 0, 0.6); 
+  border: 2px solid rgba(255,255,255,0.6);
+  cursor: pointer;
+}
+
 
 .background-video {
   position: absolute;
@@ -157,12 +183,14 @@ nav ul li a:hover::before{
   z-index: -1;
 }
 
+
 @media (min-aspect-ratio: 16/9){
   .background-video{
     width: 100%;
     height: auto;
   }
 }
+
 
 @media (max-aspect-ratio: 16/9){
   .background-video{
@@ -174,4 +202,3 @@ nav ul li a:hover::before{
 [v-cloak] {
   display: none;
 }
-
